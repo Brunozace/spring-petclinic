@@ -1,12 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        // In Jenkins: Manage Jenkins -> Global Tool Configuration
-        // Make sure you have a JDK configured with this exact name OR change it to yours
-        jdk 'JDK17'
-    }
-
+   
     triggers {
         // Every 5 minutes on Thursday
         cron('H/5 * * * 4')
